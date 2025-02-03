@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #E6D5B8;
     margin: 0;
     padding: 0;
+    color: #5C4033;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #8B5A2B;
     color: white;
     padding: 15px;
     text-align: center;
@@ -28,16 +29,16 @@ nav a:hover {
 
 h1 {
     font-size: 2.5em;
-    color: #333;
+    color: #3E2723;
 }
 
 h2 {
     font-size: 1.8em;
-    color: #4CAF50;
+    color: #5C4033;
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #8B5A2B;
     color: white;
     text-align: center;
     padding: 10px;
