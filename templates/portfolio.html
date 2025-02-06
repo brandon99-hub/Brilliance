@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Geoginah</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <nav id="main-nav">
+        <img src="{{ url_for('static', filename='images/geoginah logo.jpeg') }}" alt="Geoginah Logo" class="logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="portfolio">
+    <h1>Portfolio</h1>
+    <p>Explore Geoginah's projects, initiatives, and global engagements.</p>
+    <div class="portfolio-grid">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project 1.webp') }}" alt="Project 1">
+            <h2>Global Diplomacy Project</h2>
+            <p>Focused on strengthening cross-border relations through youth initiatives.</p>
+            <a href="/portfolio/project1" class="read-more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project 2.webp') }}" alt="Project 2">
+            <h2>Political Advocacy Campaign</h2>
+            <p>Worked with international organizations to raise awareness on key political issues.</p>
+            <a href="/portfolio/project2" class="read-more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project 3.webp') }}" alt="Project 3">
+            <h2>International Relations Research</h2>
+            <p>Published research on global political structures and international law.</p>
+            <a href="/portfolio/project3" class="read-more">Read More</a>
+        </div>
+    </div>
+    <div class="cta">
+        <p>Interested in working together? Let’s connect!</p>
+        <a href="/contact" class="cta-btn">Work With Me</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Geoginah. All Rights Reserved.</p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/ka.roki._" target="_blank">Instagram</a>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

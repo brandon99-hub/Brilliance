@@ -5,19 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You!</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body.thank-you-page {
+          background: linear-gradient(135deg, #f5e1da, #fff);
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          color: #4a2c2a;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+        header.thank-you-header {
+          background-color: #f1c6c1;
+          padding: 20px;
+          text-align: center;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header.thank-you-header h1 {
+          font-size: 2.5rem;
+          margin-bottom: 10px;
+        }
+        nav.thank-you-nav a {
+          text-decoration: none;
+          color: #3e2c41;
+          font-weight: bold;
+          margin: 0 15px;
+          transition: color 0.3s;
+        }
+        nav.thank-you-nav a:hover {
+          color: #e09b94; /* pink color on hover */
+        }
+        .content.thank-you-content {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.9);
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          position: relative;
+        }
+        .checkmark {
+          font-size: 50px;
+          color: green;
+          animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.8); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        .content.thank-you-content p {
+          font-size: 1.2rem;
+          line-height: 1.6;
+        }
+        .cta-button {
+          display: inline-block;
+          padding: 10px 20px;
+          margin-top: 15px;
+          background-color: #3e2c41;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: 0.3s ease-in-out;
+        }
+        .cta-button:hover {
+          background-color: #e09b94;
+          color: black;
+        }
+        .social-icons {
+          margin-top: 20px;
+        }
+        .social-icons a {
+          text-decoration: none;
+          margin: 0 10px;
+          font-size: 24px;
+          color: #3e2c41;
+        }
+        .social-icons a:hover {
+          color: #FFD700;
+        }
+        footer.thank-you-footer {
+          background-color: #3e2c41;
+          color: #fff;
+          text-align: center;
+          padding: 15px 20px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Thank You for Your Message!</h1>
-        <nav>
-            <a href="/">Home</a> | <a href="/projects">Projects</a> | <a href="/contact">Contact</a>
-        </nav>
-    </header>
-    <div class="content">
-        <p>Thank you, {{ name }}! Your message has been received. We'll get back to you soon.</p>
+<body class="thank-you-page">
+<header class="thank-you-header">
+    <h1>Message Sent Successfully!</h1>
+    <nav class="thank-you-nav">
+        <a href="/">Home</a> |
+        <a href="/portfolio">Projects</a> |
+        <a href="/contact">Contact</a>
+        <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+    </nav>
+</header>
+<div class="content thank-you-content">
+    <div class="checkmark">✔</div>
+    <p>Thank you, <strong>{{ name }}</strong>! Your message has been received.</p>
+    <p>We'll get back to you as soon as possible.</p>
+    <a href="/portfolio" class="cta-button">Explore My Work</a>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
-    <footer>
-        <p>&copy; 2025 Geoginah - All rights reserved.</p>
-    </footer>
+</div>
+<footer class="thank-you-footer">
+    <p>&copy; 2025 Geoginah - All rights reserved.</p>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/ka.roki._" target="_blank">Instagram</a>
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <nav id="main-nav">
+        <img src="{{ url_for('static', filename='images/geoginah logo.jpeg') }}" alt="Geoginah Logo" class="logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="intro">
+    <p>Welcome! I’m Geoginah, a Public Relations student. Feel free to reach out for inquiries, feedback, or any
+        questions regarding my work. I’ll get back to you as soon as possible!</p>
+</section>
+
+<section class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> +254 796 894636</p>
+    <p><strong>Email:</strong> geoginahkaroki@gnail.com</p>
+    <p><strong>Address:</strong> Nairobi, Kenya</p>
+</section>
+
+<section class="contact-form">
+    <h2>Get in Touch</h2>
+    <!-- Updated form action to /contact -->
+    <form action="/contact" method="POST" id="contactForm">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+                <option value="Inquiry">Inquiry</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Support">Support</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section class="map">
+    <h2>Find Us</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=-1.24680665422374, 36.87083446235418" width="600" height="450" style="border:0;" allowfullscreen=""
+            loading="lazy"></iframe>
+</section>
+
+<section class="social-links">
+    <h2>Follow Me</h2>
+    <a href="https://www.instagram.com/ka.roki._" target="_blank">Instagram</a>
+    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Geoginah. All Rights Reserved.</p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/ka.roki._" target="_blank">Instagram</a>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

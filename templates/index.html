@@ -3,21 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geoginah - Public Relations</title>
+    <title>Geoginah | International Relations & Political Science</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Inline CSS for demonstration, move to styles.css for production */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('{{ url_for('static', filename='images/background.jpg') }}');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(139, 69, 19, 0.8); /* Coffee brown with transparency */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            width: 60px;
+            height: auto;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header ul li {
+            margin: 0 15px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        header ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Slight overlay for readability */
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #f4f4f4;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #8B4513; /* Coffee brown */
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #A0522D;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(139, 69, 19, 0.9);
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Geoginah's Public Relations Page</h1>
-        <nav>
-            <a href="/">Home</a> | <a href="/projects">Projects</a> | <a href="/contact">Contact</a>
-        </nav>
-    </header>
-    <div class="content">
-        <p>Hello! My name is Geoginah, and I specialize in Public Relations. This website showcases my skills and projects.</p>
+<header>
+    <img src="{{ url_for('static', filename='images/geoginah logo.jpeg') }}" alt="Geoginah Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Geoginah</h1>
+    <h2>Public Relations | International Relations | Political Science</h2>
+    <p>Passionate about global affairs, diplomacy, and public engagement.</p>
+    <a href="/portfolio" class="btn">View My Work</a>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Geoginah. All Rights Reserved.</p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/ka.roki._" target="_blank">Instagram</a>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2025 Geoginah - All rights reserved.</p>
-    </footer>
+</footer>
 </body>
 </html>

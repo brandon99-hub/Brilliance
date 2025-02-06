@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Geoginah</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <nav id="main-nav">
+        <img src="{{ url_for('static', filename='images/geoginah logo.jpeg') }}" alt="Geoginah Logo" class="logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="about">
+    <h1>About Me</h1>
+    <div class="about-container">
+        <img src="{{ url_for('static', filename='images/about photo.jpg')}}" alt="Geoginah Photo">
+        <div class="about-text">
+            <p>
+                Hi, I'm Geoginah, a passionate professional in public relations, international relations, and political
+                science.
+                With a deep commitment to global diplomacy, I've worked on numerous initiatives aimed at fostering
+                cross-cultural understanding and collaboration.
+            </p>
+            <p>
+                My expertise lies in crafting impactful communication strategies, building networks across borders, and
+                engaging with diverse communities.
+                I thrive on solving complex challenges and driving meaningful change.
+            </p>
+            <a href="/portfolio" class="btn">View My Work</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Geoginah. All Rights Reserved.</p>
+        <p class="footer-tagline">Let’s connect and collaborate to build a better world!</p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/ka.roki._" target="_blank">Instagram</a>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
