@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cddd870f-8acf-40f7-ae83-f918ff711458" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/about photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/geoginah logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/project 1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/project 2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/project 3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin_dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/portfolio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/project1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/project2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/project3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Thank_you.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Thank_you.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contacts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/projects.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
