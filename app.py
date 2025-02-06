@@ -50,7 +50,9 @@ def load_user(user_id):
 # Routes
 @app.route('/')
 def home():
-    return render_template('index.html')  # Redirect to the login page
+    if not current_user.is_authenticated:
+        return redirect(url_for('login'))  # Redirect to login page if not logged in
+    return render_template('index.html')  # Show home page only if logged in
 
 @app.route('/about')
 def about():
@@ -110,6 +112,7 @@ def login():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
+        remember = 'remember' in request.form  # Check if "Remember Me" is selected
 
         # Check if user exists
         user = User.query.filter_by(email=email).first()

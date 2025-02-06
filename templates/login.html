@@ -22,12 +22,12 @@
 <section class="login">
     <h2>Login</h2>
 
-    <!-- Displaying Flash Message -->
-    {% with messages = get_flashed_messages() %}
+    <!-- Display Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=True) %}
     {% if messages %}
     <ul>
-        {% for message in messages %}
-        <li style="color: red;">{{ message }}</li>
+        {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
         {% endfor %}
     </ul>
     {% endif %}
@@ -39,6 +39,9 @@
 
         <label for="password">Password:</label>
         <input type="password" name="password" required><br>
+        <label>
+            <input type="checkbox" name="remember"> Remember me
+        </label><br>
 
         <button type="submit">Login</button>
     </form>
