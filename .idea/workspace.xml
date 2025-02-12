@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cddd870f-8acf-40f7-ae83-f918ff711458" name="Changes" comment="">
+    <list default="true" id="cddd870f-8acf-40f7-ae83-f918ff711458" name="Changes" comment="css changed to fit all media">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/geoginah logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +74,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738163581650</updated>
-      <workItem from="1739305498410" duration="1797000" />
+      <workItem from="1739305498410" duration="3625000" />
     </task>
+    <task id="LOCAL-00001" summary="css changed to fit all media">
+      <option name="closed" value="true" />
+      <created>1739370450772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739370450772</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="css changed to fit all media" />
+    <option name="LAST_COMMIT_MESSAGE" value="css changed to fit all media" />
   </component>
 </project>
