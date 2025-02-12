@@ -103,7 +103,8 @@ def project2():
 def project3():
     return render_template('project3.html',
                            title="Global Diplomacy Project",
-                           description=" This project analyzes the role of diplomacy in fostering peaceful international relations. It explores key diplomatic strategies used by global powers and the impact of diplomatic negotiations on global stability. The project also examines how diplomacy can address major global challenges such as conflict resolution, economic partnerships, and international treaties.",
+                           description=" This project analyzes the role of diplomacy in fostering peaceful international relations. It explores key diplomatic strategies used by global powers and the impact of diplomatic negotiations on global stability."
+                                       " The project also examines how diplomacy can address major global challenges such as conflict resolution, economic partnerships, and international treaties.",
                            image="images/project 3.webp")  # Add image path
 
 # Login Route (login page)
